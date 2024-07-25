@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Loan Application</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Check Applicant's Loan Eligibility</h1>
+    <h2 class="text-center">Please enter the required details below:</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        
+        <div class="form-group">
+            <label for="age">{{ form.ag.label }}</label>
+            {{ form.ag(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="income">{{ form.inc.label }}</label>
+            {{ form.inc(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="loan_amount">{{ form.l_amt.label }}</label>
+            {{ form.l_amt(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="credit_score">{{ form.c_sco.label }}</label>
+            {{ form.c_sco(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="months_employed">{{ form.m_emp.label }}</label>
+            {{ form.m_emp(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="number_of_credit_lines">{{ form.n_cl.label }}</label>
+            {{ form.n_cl(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="interest_rate">{{ form.i_rate.label }}</label>
+            {{ form.i_rate(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="loan_term">{{ form.l_term.label }}</label>
+            {{ form.l_term(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="dti_ratio">{{ form.dti.label }}</label>
+            {{ form.dti(class_="form-control") }}
+        </div>
+
+        <div class="form-group">
+            <label for="has_mortgage">{{ form.mortg.label }}</label>
+            {{ form.mortg() }}
+        </div>
+        
+        <div class="form-group">
+            <label for="has_dependents">{{ form.deped.label }}</label>
+            {{ form.deped() }}
+        </div>
+
+        <div class="form-group">
+            <label for="has_cosigner">{{ form.cosign.label }}</label>
+            {{ form.cosign() }}
+        </div>
+        
+        <div class="form-group">
+            <label for="education">{{ form.ed.label }}</label>
+            {{ form.ed(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="employment_type">{{ form.em_typ.label }}</label>
+            {{ form.em_typ(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="marital_status">{{ form.mar_st.label }}</label>
+            {{ form.mar_st(class_="form-control") }}
+        </div>
+        
+        <div class="form-group">
+            <label for="loan_purpose">{{ form.l_purp.label }}</label>
+            {{ form.l_purp(class_="form-control") }}
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
